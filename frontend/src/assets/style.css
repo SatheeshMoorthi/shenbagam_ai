@@ -1,0 +1,34 @@
+/* Chat Response Styles */
+.chat-response {
+    max-width: 70%; /* Adjust the maximum width of the chat response container */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .user-response {
+    background-color: #f0f0f0; /* Light gray background for user responses */
+  }
+  
+  .assistant-response {
+    background-color: #4caf50; /* Green background for assistant responses */
+    color: #fff; /* White text for assistant responses */
+  }
+  
+  /* Additional Styles */
+  .response-container {
+    max-width: 800px; /* Adjust the maximum width of the response container */
+    margin: auto;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .chat-response {
+      max-width: 90%; /* Adjust maximum width for smaller screens */
+    }
+  
+    .response-container {
+      padding: 10px; /* Add padding for smaller screens */
+    }
+  }
+  

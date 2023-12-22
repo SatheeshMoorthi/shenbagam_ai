@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --leva-sizes-rootWidth: 340px;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-image: url('./assets/bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%) */
+
+body.greenScreen {
+  background-color: #00ff00;
+  background-image: none;
+}
+
+
+/* Chat Message Styles */
+.chat-message {
+  max-width: 70%; /* Adjust the maximum width of the chat bubble */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.user-message {
+  background-color: #f0f0f0; /* Light gray background for user messages */
+}
+
+.assistant-message {
+  background-color: #4caf50; /* Green background for assistant messages */
+  color: #fff; /* White text for assistant messages */
+}
+
+/* Additional Styles */
+.chat-container {
+  max-width: 800px; /* Adjust the maximum width of the chat container */
+  margin: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .chat-message {
+    max-width: 90%; /* Adjust maximum width for smaller screens */
+  }
+
+  .chat-container {
+    padding: 10px; /* Add padding for smaller screens */
+  }
+}
